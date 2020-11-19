@@ -16,11 +16,11 @@ public class AppController {
     }
 
     @PostMapping("/ok")
-    public String result(@RequestParam String usd, Model model) {
+    public String result(@RequestParam String usd,@RequestParam String rate, Model model) {
         double USD = Double.parseDouble(usd);
-//        double RATE = Double.parseDouble(rate);
+        double RATE = Double.parseDouble(rate);
 
-        double result = USD * 23000;
+        double result = USD * RATE;
         model.addAttribute("result",result);
         return "index";
     }

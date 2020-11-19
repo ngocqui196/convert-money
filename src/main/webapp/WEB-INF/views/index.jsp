@@ -18,11 +18,12 @@
     <label>USD: </label><br/>
     <input type="text" name="usd"/><br/>
 
-    <label>VND: </label><br/>
-    <input type="text" name="result" placeholder="USD" value="${result}"/><br/>
+    <label>RATE: </label><br/>
+    <input type="text" name="rate" placeholder="USD"/><br/>
     <input type = "submit" id = "submit" value = "Converter"/>
   </form>
-
+  <label>VND: </label><br/>
+  <input type="text" name="vnd" placeholder="đừng nhập gì vào đây" value="${result}"/><br/>
 
   </body>
 </html>
